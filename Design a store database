@@ -1,0 +1,25 @@
+CREATE TABLE bikes (id INTEGER PRIMARY KEY, part TEXT, quantity INTEGER, aisle INTEGER, price INTEGER);
+INSERT INTO bikes VALUES (1, "tire", 10, 1, 10.00);
+INSERT INTO bikes VALUES (2, "wheel", 10, 2, 5.00);
+INSERT INTO bikes VALUES (3, "seat", 8, 3, 5.00);
+INSERT INTO bikes VALUES (4, "horn", 8, 3, 5.00);
+INSERT INTO bikes VALUES (5, "spoke", 10, 2, 4.00);
+INSERT INTO bikes VALUES (6, "handle", 10, 3, 4.00);
+INSERT INTO bikes VALUES (7, "chain", 5, 4, 4.00);
+INSERT INTO bikes VALUES (8, "lube", 10, 5, 4.00);
+INSERT INTO bikes VALUES (9, "pedal", 10, 3, 4.00);
+INSERT INTO bikes VALUES (10, "pegs", 10, 3, 4.00);
+INSERT INTO bikes VALUES (11, "gears", 10, 2, 5.00);
+INSERT INTO bikes VALUES (12, "spike", 10, 3, 2.00);
+INSERT INTO bikes VALUES (13, "shoes", 10, 5, 5.00);
+INSERT INTO bikes VALUES (14, "shorts", 10, 5, 5.00);
+INSERT INTO bikes VALUES (15, "shirts", 10, 5, 5.00);
+
+SELECT * FROM bikes
+ORDER BY price;
+
+SELECT * FROM bikes 
+WHERE price > (5);
+
+SELECT * FROM bikes
+WHERE quantity = (8);
